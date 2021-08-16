@@ -352,10 +352,19 @@ section {
   margin: 0.5rem;
 }
 
+.footer-icons {
+  margin-top: 3rem;
+}
+
+.icon {
+  color: var(--N-white);
+  margin-right: 1.5rem;
+}
+
 .footer-logo {
   margin-top: 3rem;
   fill: var(--N-white);
-  width: 6.875rem;
+  width: 9rem;
 }
 
 .filter-white {
