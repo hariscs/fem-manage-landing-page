@@ -1,35 +1,43 @@
 html {
-	font-size: 100%;
-	box-sizing: border-box;
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 :root {
-	/* Primary colors */
-	--P-Bright-Red: hsl(12, 88%, 59%);
-	--p-DarkBlue: hsl(228, 39%, 23%);
+  /* Primary colors */
+  --P-Bright-Red: hsl(12, 88%, 59%);
+  --p-DarkBlue: hsl(228, 39%, 23%);
 
-	/* Neutral colors */
-	--N-Dark-Grayish-Blue: hsl(227, 12%, 61%);
-	--N-Very-Dark-Blue: hsl(233, 12%, 13%);
-	--N-Very-Pale-Red: hsl(13, 100%, 96%);
-	--N-Vary-Light-Gray: hsl(0, 0%, 98%);
+  /* Neutral colors */
+  --N-Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --N-Very-Dark-Blue: hsl(233, 12%, 13%);
+  --N-Very-Pale-Red: hsl(13, 100%, 96%);
+  --N-Vary-Light-Gray: hsl(0, 0%, 98%);
 }
 
 body {
-	font-family: 'Be Vietnam', sans-serif;
-	font-size: 1rem;
-	margin: 0;
-	line-height: 1.6;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.6;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -37,19 +45,21 @@ h2,
 h3,
 h4,
 p {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 section {
-	margin: 4em 0;
-	padding: 2em 0;
+  margin: 4em 0;
+  padding: 2em 0;
 }
 
 .container {
-	width: 90%;
-	max-width: 375px;
-	margin: 0 auto;
+  width: 90%;
+  max-width: 375px;
+  margin: 0 auto;
 }
+
+/* header section */
 
 /* services section */
