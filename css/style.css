@@ -51,20 +51,20 @@ p {
 }
 
 p {
-	color: var(--N-Dark-Grayish-Blue);
+  color: var(--N-Dark-Grayish-Blue);
 }
 
 ul {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 section {
@@ -74,17 +74,17 @@ section {
 
 /* buttons */
 .btn {
-	display: inline-block;
-	padding: 0.7em 2.1em;
-	margin: 1em 0;
-	border-radius: 100vh;
-	font-family: inherit;
-	box-shadow: 1px 3px 5px 0px rgba(242, 95, 58, 0.75);
+  display: inline-block;
+  padding: 0.7em 2.1em;
+  margin: 1em 0;
+  border-radius: 100vh;
+  font-family: inherit;
+  box-shadow: 1px 3px 5px 0px rgba(242, 95, 58, 0.75);
 }
 
 .cta {
-	background: var(--P-Bright-Red);
-	color: var(--N-Vary-Light-Gray);
+  background: var(--P-Bright-Red);
+  color: var(--N-Vary-Light-Gray);
 }
 
 /* general layout */
@@ -112,6 +112,8 @@ section {
 .menu {
 	display: none;
 }
+
+/* hamburger menu */
 
 .hamburger {
 	position: relative;
@@ -150,104 +152,122 @@ section {
 }
 
 .flex {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-	color: var(--p-DarkBlue);
+  color: var(--p-DarkBlue);
+}
+
+/* banner section */
+
+.banner-info {
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+}
+
+.banner-text {
+  padding: 0 1rem;
+}
+
+.btn-primary {
+  margin-top: 1.8rem;
 }
 
 /* services section */
 
 .services-info {
-	text-align: center;
+  text-align: center;
 }
 
 .services-info-title {
-	font-size: 2rem;
-	max-width: 15ch;
-	margin: 0.5em auto;
+  font-size: 2rem;
+  max-width: 15ch;
+  margin: 0.5em auto;
 }
 
 .services-info-text {
-	max-width: 37ch;
-	margin: 0.5em auto;
+  max-width: 37ch;
+  margin: 0.5em auto;
 }
 
 /* services card */
 .services-details-card {
-	margin: 1em 0;
-	padding: 1em 0;
+  margin: 1em 0;
+  padding: 1em 0;
 }
 
 .services-details-title {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 .services-details-text {
-	max-width: 40ch;
-	font-size: 0.9rem;
+  max-width: 40ch;
+  font-size: 0.9rem;
 }
 
 .services-details {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 .services-bar {
-	display: flex;
-	gap: 1em;
-	align-items: center;
-	position: relative;
-	margin-bottom: 1em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1em;
 }
 
 .services-bar::after {
-	content: '';
-	width: 500px;
-	height: 35px;
-	left: 10px;
-	background: var(--N-Very-Pale-Red);
-	position: absolute;
-	z-index: -1;
+  content: "";
+  width: 500px;
+  height: 35px;
+  left: 10px;
+  background: var(--N-Very-Pale-Red);
+  position: absolute;
+  z-index: -1;
 }
 
 .services-details-number {
-	color: var(--N-Vary-Light-Gray);
-	background: var(--P-Bright-Red);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 60px;
-	height: 35px;
-	border-radius: 100vh;
+  color: var(--N-Vary-Light-Gray);
+  background: var(--P-Bright-Red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 35px;
+  border-radius: 100vh;
 }
 
 /* testimonials section */
 .testimonials-title {
-	text-align: center;
-	font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 /* testimonials card */
 
 .card {
-	background: var(--N-Vary-Light-Gray);
-	padding: 1.4em;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	gap: 1.5em;
-	margin-top: 4em;
+  background: var(--N-Vary-Light-Gray);
+  padding: 1.4em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 4em;
 }
 
 .card-img {
-	width: 65px;
-	margin-top: -4.2em;
+  width: 65px;
+  margin-top: -4.2em;
 }
 
 .card-text {
-	font-size: 0.75rem;
-	max-width: 35ch;
+  font-size: 0.75rem;
+  max-width: 35ch;
 }
