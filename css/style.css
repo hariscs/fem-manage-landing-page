@@ -41,9 +41,37 @@ p {
 	padding: 0;
 }
 
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 section {
 	margin: 4em 0;
 	padding: 2em 0;
+}
+
+/* buttons */
+.btn {
+	display: inline-block;
+	padding: 0.7em 2.1em;
+	margin: 1em 0;
+	border-radius: 100vh;
+	font-family: inherit;
+	box-shadow: 1px 3px 5px 0px rgba(242, 95, 58, 0.75);
+}
+
+.cta {
+	background: var(--P-Bright-Red);
+	color: var(--N-Vary-Light-Gray);
 }
 
 .container {
@@ -52,4 +80,16 @@ section {
 	margin: 0 auto;
 }
 
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	color: var(--p-DarkBlue);
+}
+
 /* services section */
+
+.services-info {
+}
