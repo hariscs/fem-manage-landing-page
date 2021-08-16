@@ -158,3 +158,32 @@ section {
 	height: 35px;
 	border-radius: 100vh;
 }
+
+/* testimonials section */
+.testimonials-title {
+	text-align: center;
+	font-size: 2rem;
+}
+
+/* testimonials card */
+
+.card {
+	background: var(--N-Vary-Light-Gray);
+	padding: 1.4em;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.5em;
+	margin-top: 4em;
+}
+
+.card-img {
+	width: 65px;
+	margin-top: -4.2em;
+}
+
+.card-text {
+	font-size: 0.75rem;
+	max-width: 35ch;
+}
