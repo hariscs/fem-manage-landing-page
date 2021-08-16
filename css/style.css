@@ -70,6 +70,12 @@ section {
   max-width: 6.875em;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .menu {
   display: none;
 }
@@ -104,6 +110,10 @@ section {
 
 .bar::after {
   top: 6px;
+}
+
+.banner {
+  margin-top: 3em;
 }
 
 /* services section */
