@@ -41,6 +41,10 @@ p {
 	padding: 0;
 }
 
+p {
+	color: var(--N-Dark-Grayish-Blue);
+}
+
 ul {
 	padding: 0;
 	margin: 0;
@@ -74,6 +78,7 @@ section {
 	color: var(--N-Vary-Light-Gray);
 }
 
+/* general layout */
 .container {
 	width: 90%;
 	max-width: 375px;
@@ -92,4 +97,64 @@ section {
 /* services section */
 
 .services-info {
+	text-align: center;
+}
+
+.services-info-title {
+	font-size: 2rem;
+	max-width: 15ch;
+	margin: 0.5em auto;
+}
+
+.services-info-text {
+	max-width: 37ch;
+	margin: 0.5em auto;
+}
+
+/* services card */
+.services-details-card {
+	margin: 1em 0;
+	padding: 1em 0;
+}
+
+.services-details-title {
+	font-size: 1rem;
+}
+
+.services-details-text {
+	max-width: 40ch;
+	font-size: 0.9rem;
+}
+
+.services-details {
+	margin-top: 2em;
+}
+
+.services-bar {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	position: relative;
+	margin-bottom: 1em;
+}
+
+.services-bar::after {
+	content: '';
+	width: 500px;
+	height: 35px;
+	left: 10px;
+	background: var(--N-Very-Pale-Red);
+	position: absolute;
+	z-index: -1;
+}
+
+.services-details-number {
+	color: var(--N-Vary-Light-Gray);
+	background: var(--P-Bright-Red);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 35px;
+	border-radius: 100vh;
 }
