@@ -157,12 +157,17 @@ section {
 
 header.overlay {
   height: 100%;
+  width: 100%;
   z-index: 5;
   background: linear-gradient(
     to bottom,
     rgba(245, 246, 252, 0),
     rgba(12, 13, 16, 0.8)
   );
+}
+
+.prevent-scroll {
+  overflow-y: hidden;
 }
 
 .menu-item {
