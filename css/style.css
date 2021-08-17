@@ -386,9 +386,25 @@ section {
 	margin: 0.5rem;
 }
 
+
 .footer-link:hover,
 .footer-link:focus {
 	color: var(--P-Bright-Red);
+
+.footer-icons {
+  margin-top: 3rem;
+}
+
+.icon {
+  color: var(--N-white);
+  margin-right: 1.5rem;
+}
+
+.footer-logo {
+  margin-top: 3rem;
+  fill: var(--N-white);
+  width: 9rem;
+
 }
 
 .footer-logo {
