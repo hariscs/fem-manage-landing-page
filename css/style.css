@@ -112,7 +112,6 @@ section {
   background-color: var(--N-white);
   color: var(--P-Bright-Red);
   font-weight: 500;
-  box-shadow: 1px 3px 5px 0px rgba(255, 255, 255, 0.75);
 }
 
 /* general layout */
@@ -325,7 +324,65 @@ header.overlay {
   font-size: 2rem;
 }
 
+.slider {
+  width: 23rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.previous,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+
+  border: none;
+  background: none;
+  color: var(--P-Bright-Red);
+}
+
+.previous {
+  left: 20px;
+  z-index: 2;
+}
+
+.next {
+  right: 20px;
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+
+.slider-btn {
+  border: 2px solid var(--P-Bright-Red);
+  width: 0.2em;
+  height: 0.2em;
+  padding: 0.2em;
+  border-radius: 50%;
+  margin: 0.5rem;
+  background-color: var(--N-white);
+}
+
+.slider-btn[aria-current="true"] {
+  background-color: var(--P-Bright-Red);
+  width: 0.3em;
+  height: 0.3em;
+}
+
 /* testimonials card */
+
+.cards {
+  display: flex;
+  transform: translateX(-23px);
+}
 
 .card {
   background: var(--N-Vary-Light-Gray);
@@ -336,11 +393,13 @@ header.overlay {
   flex-direction: column;
   gap: 1.5em;
   margin-top: 4em;
+
+  min-width: 21em;
 }
 
 .card-img {
   width: 65px;
-  margin-top: -3em;
+  margin-top: -3.5em;
 }
 
 .card-text {
