@@ -390,21 +390,6 @@ header.overlay {
 }
 
 .card {
-<<<<<<< main
-	background: var(--N-Vary-Light-Gray);
-	padding: 1.4em;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	gap: 1.5em;
-	margin-top: 4em;
-}
-
-.card-img {
-	width: 65px;
-	margin-top: -3em;
-=======
   background: var(--N-Vary-Light-Gray);
   padding: 1.4em;
   text-align: center;
@@ -420,7 +405,6 @@ header.overlay {
 .card-img {
   width: 65px;
   margin-top: -3.5em;
->>>>>>> main
 }
 
 .card-text {
