@@ -517,9 +517,14 @@ header.overlay {
 	}
 
 	/* footer */
+	footer {
+		font-size: 1rem;
+	}
 	.grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			'logo links form'
+			'icons . copyright';
 		gap: 1em;
 		align-items: start;
 	}
@@ -528,12 +533,38 @@ header.overlay {
 	.footer-icons {
 		align-self: center;
 	}
-	.footer-links-group {
+
+	.footer-logo {
+		grid-area: logo;
 		margin-top: 0;
 	}
 
+	.footer-icons {
+		grid-area: icons;
+	}
+
+	.footer-links-group {
+		grid-area: links;
+		margin-top: 0;
+	}
+
+	.footer-form {
+		grid-area: form;
+	}
+
+	.fab {
+		font-size: 1.5rem;
+	}
+
 	.footer-copyright {
-		text-align: center;
-		grid-column: 1/-1;
+		grid-area: copyright;
+	}
+}
+
+/* media query for desktops */
+
+@media (min-width: 1000px) {
+	body {
+		font-size: 1.5rem;
 	}
 }
