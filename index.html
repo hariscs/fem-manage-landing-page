@@ -152,55 +152,83 @@
     <section class="testimonials">
       <h2 class="testimonials-title title">What they’ve said</h2>
 
-      <div class="cards">
-        <!-- card 1 -->
-        <blockquote class="card">
-          <img src="./images/avatar-anisha.png" alt="Anisha" class="card-img" />
-          <h4 class="card-name">Anisha Li</h4>
-          <p class="card-text">
-            “Manage has supercharged our team’s workflow. The ability to
-            maintain visibility on larger milestones at all times keeps everyone
-            motivated.”
-          </p>
-        </blockquote>
+      <section class="slider" aria-label="testimonial slider">
+        <p class="sr-only">
+          Image slider with four slides, shown one at a time. Use next and
+          previous for navigation
+        </p>
 
-        <!-- card 2 -->
-        <blockquote class="card">
-          <img src="./images/avatar-ali.png" alt="Ali" class="card-img" />
-          <h4 class="card-name">Ali Bravo</h4>
-          <p class="card-text">
-            “We have been able to cancel so many other subscriptions since using
-            Manage. There is no more cross-channel confusion and everyone is
-            much more focused.”
-          </p>
-        </blockquote>
+        <buton class="previous">
+          <span><i class="fas fa-angle-left fa-3x"></i></span>
+          <span class="sr-only">Previous</span>
+        </buton>
 
-        <!-- card 3 -->
-        <blockquote class="card">
-          <img
-            src="./images/avatar-richard.png"
-            alt="Richard"
-            class="card-img"
-          />
-          <h4 class="card-name">Richard Watts</h4>
-          <p class="card-text">
-            “Manage allows us to provide structure and process. It keeps us
-            organized and focused. I can’t stop recommending them to everyone I
-            talk to!”
-          </p>
-        </blockquote>
+        <div class="cards">
+          <!-- card 1 -->
+          <blockquote class="card slide" role="group" aria-label="slide 1 of 4">
+            <img
+              src="./images/avatar-anisha.png"
+              alt="Anisha"
+              class="card-img"
+            />
+            <h4 class="card-name">Anisha Li</h4>
+            <p class="card-text">
+              “Manage has supercharged our team’s workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </p>
+          </blockquote>
 
-        <!-- card 4 -->
-        <blockquote class="card">
-          <img src="./images/avatar-shanai.png" alt="Shanai" class="card-img" />
-          <h4 class="card-name">Shanai Gough</h4>
-          <p class="card-text">
-            “Their software allows us to track, manage and collaborate on our
-            projects from anywhere. It keeps the whole team in-sync without
-            being intrusive.”
-          </p>
-        </blockquote>
-      </div>
+          <!-- card 2 -->
+          <blockquote class="card slide" role="group" aria-label="slide 2 of 4">
+            <img src="./images/avatar-ali.png" alt="Ali" class="card-img" />
+            <h4 class="card-name">Ali Bravo</h4>
+            <p class="card-text">
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
+          </blockquote>
+
+          <!-- card 3 -->
+          <blockquote class="card slide" role="group" aria-label="slide 3 of 4">
+            <img
+              src="./images/avatar-richard.png"
+              alt="Richard"
+              class="card-img"
+            />
+            <h4 class="card-name">Richard Watts</h4>
+            <p class="card-text">
+              “Manage allows us to provide structure and process. It keeps us
+              organized and focused. I can’t stop recommending them to everyone
+              I talk to!”
+            </p>
+          </blockquote>
+
+          <!-- card 4 -->
+          <blockquote class="card slide" role="group" aria-label="slide 4 of 4">
+            <img
+              src="./images/avatar-shanai.png"
+              alt="Shanai"
+              class="card-img"
+            />
+            <h4 class="card-name">Shanai Gough</h4>
+            <p class="card-text">
+              “Their software allows us to track, manage and collaborate on our
+              projects from anywhere. It keeps the whole team in-sync without
+              being intrusive.”
+            </p>
+          </blockquote>
+        </div>
+
+        <buton class="next">
+          <span><i class="fas fa-angle-right fa-3x"></i></span>
+          <span class="sr-only">Next</span>
+        </buton>
+
+        <ul class=""></ul>
+      </section>
+      <!-- slider -->
 
       <a href="/" class="btn cta btn-primary">Get Started</a>
     </section>
