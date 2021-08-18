@@ -388,11 +388,13 @@ header.overlay {
 }
 
 .card {
+
   display: none;
 }
 
 .card.active {
   display: block;
+
   background: var(--N-Vary-Light-Gray);
   padding: 1.4em;
   text-align: center;
@@ -518,6 +520,7 @@ header.overlay {
 
 /* Media query for tablets */
 @media (min-width: 700px) {
+
   body {
     font-size: 1.3rem;
   }
@@ -607,4 +610,126 @@ header.overlay {
     text-align: center;
     grid-column: 1/-1;
   }
+
+	body {
+		font-size: 1.3rem;
+	}
+	/* header section */
+	.banner-title {
+		font-size: 3rem;
+		max-width: 20ch;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.banner-text {
+		max-width: 40ch;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* services section */
+	.services-info-title {
+		font-size: 2.5rem;
+		max-width: 20ch;
+		margin: 0.5em auto;
+	}
+
+	.services-info-text {
+		max-width: 45ch;
+		margin: 0.5em auto;
+	}
+
+	.services-bar::after {
+		background: none;
+	}
+
+	.services-info-title {
+		font-size: 2.3rem;
+		max-width: 18ch;
+		margin: 0.5em auto;
+	}
+
+	.services-info-text {
+		max-width: 40ch;
+		margin: 0.5em auto;
+	}
+
+	.services-details-title {
+		font-size: 1.4rem;
+	}
+
+	.services-details-text {
+		max-width: 43ch;
+		font-size: 0.9rem;
+	}
+
+	/* Testimonials section */
+	.testimonials-title {
+		text-align: center;
+		font-size: 2.3rem;
+	}
+	.card-text {
+		font-size: 0.9rem;
+		max-width: 35ch;
+	}
+
+	/* cta section */
+	.cta-title {
+		font-size: 2.7rem;
+		max-width: 15ch;
+	}
+
+	/* footer */
+	footer {
+		font-size: 1rem;
+	}
+	.grid {
+		display: grid;
+		grid-template-areas:
+			'logo links form'
+			'icons . copyright';
+		gap: 1em;
+		align-items: start;
+	}
+
+	.footer-logo,
+	.footer-icons {
+		align-self: center;
+	}
+
+	.footer-logo {
+		grid-area: logo;
+		margin-top: 0;
+	}
+
+	.footer-icons {
+		grid-area: icons;
+	}
+
+	.footer-links-group {
+		grid-area: links;
+		margin-top: 0;
+	}
+
+	.footer-form {
+		grid-area: form;
+	}
+
+	.fab {
+		font-size: 1.5rem;
+	}
+
+	.footer-copyright {
+		grid-area: copyright;
+	}
+}
+
+/* media query for desktops */
+
+@media (min-width: 1000px) {
+	body {
+		font-size: 1.5rem;
+	}
+
 }
