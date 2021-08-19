@@ -441,7 +441,7 @@ header.overlay {
 
 .footer {
   background-color: var(--N-Very-Dark-Blue);
-  padding: 3rem 1rem;
+  padding: 3rem 6rem;
 }
 
 .container-footer {
@@ -529,6 +529,8 @@ header.overlay {
 @media (min-width: 700px) {
   body {
     font-size: 1.3rem;
+
+    padding-top: 1rem;
   }
 
   .banner-title {
@@ -540,7 +542,7 @@ header.overlay {
 
   .banner-text {
     max-width: 40ch;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
   }
 
@@ -604,6 +606,10 @@ header.overlay {
     align-items: start;
   }
 
+  .footer-link {
+    font-size: 0.9375rem;
+  }
+
   .footer-logo,
   .footer-icons {
     align-self: center;
@@ -617,9 +623,6 @@ header.overlay {
     grid-column: 1/-1;
   }
 
-  body {
-    font-size: 1.3rem;
-  }
   /* header section */
   .banner-title {
     font-size: 3rem;
@@ -630,7 +633,8 @@ header.overlay {
 
   .banner-text {
     max-width: 40ch;
-    margin-left: auto;
+    margin-top: 1rem;
+    margin-left: 0;
     margin-right: auto;
   }
 
@@ -692,10 +696,12 @@ header.overlay {
   }
   .grid {
     display: grid;
+    grid-template-columns: 260px 550px 1fr;
     grid-template-areas:
       "logo links form"
       "icons . copyright";
-    gap: 1em;
+    column-gap: 1em;
+    row-gap: 0;
     align-items: start;
   }
 
@@ -707,15 +713,19 @@ header.overlay {
   .footer-logo {
     grid-area: logo;
     margin-top: 0;
+    align-self: baseline;
   }
 
   .footer-icons {
     grid-area: icons;
+    margin-top: 0;
+    transform: translateY(-2rem);
   }
 
   .footer-links-group {
     grid-area: links;
     margin-top: 0;
+    justify-content: space-evenly;
   }
 
   .footer-form {
@@ -728,6 +738,8 @@ header.overlay {
 
   .footer-copyright {
     grid-area: copyright;
+    margin-top: 0;
+    transform: translateY(-1.5rem);
   }
 }
 
@@ -748,6 +760,15 @@ header.overlay {
   .header {
     margin-top: 1em;
   }
+
+  .logo {
+    margin-top: 1rem;
+  }
+
+  .navbar {
+    padding: 0 1rem 0 6.5rem;
+  }
+
   .hamburger {
     display: none;
   }
@@ -763,6 +784,12 @@ header.overlay {
 
   .menu-item {
     margin-left: 20px;
+    font-size: 0.875rem;
+  }
+
+  .banner {
+    margin-top: 6rem;
+    padding: 0 1rem 0 6rem;
   }
 
   .banner-info {
@@ -774,10 +801,12 @@ header.overlay {
 
   .banner-title {
     max-width: 15ch;
+    font-size: 3.5rem;
   }
 
   .banner-text {
     max-width: 38ch;
+    font-size: 1rem;
   }
 
   .banner-img {
@@ -791,6 +820,7 @@ header.overlay {
   /* services section */
   .services {
     /* position: relative; */
+    padding: 4rem 6rem 0 6rem;
   }
   .services .flex {
     align-items: flex-start;
@@ -816,6 +846,7 @@ header.overlay {
 
   .services-info-title {
     margin-left: 0;
+    font-size: 2.5rem;
   }
 
   .services-info-text {
@@ -824,9 +855,17 @@ header.overlay {
   }
 
   /* cta section */
+  .cta-section {
+    padding: 1rem 6rem;
+  }
+
   .cta-title {
     max-width: 20ch;
     margin: 0;
     text-align: left;
+  }
+
+  .btn-secondary {
+    margin-top: 6rem;
   }
 }
