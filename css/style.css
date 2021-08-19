@@ -171,6 +171,10 @@ header.overlay {
 	font-weight: 700;
 }
 
+.menu-item:hover,
+.menu-item:focus {
+	color: var(--P-Bright-Red);
+}
 .btn-nav {
 	display: none;
 }
