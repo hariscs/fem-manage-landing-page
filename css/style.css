@@ -729,4 +729,96 @@ header.overlay {
 	.container {
 		max-width: 1440px;
 	}
+
+	.flex {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* header */
+	.header {
+		margin-top: 1em;
+	}
+	.hamburger {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+	}
+
+	.btn-nav {
+		font-size: 1rem;
+		display: initial;
+	}
+
+	.menu-item {
+		margin-left: 20px;
+	}
+
+	.banner-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text-align: left;
+	}
+
+	.banner-title {
+		max-width: 15ch;
+	}
+
+	.banner-text {
+		max-width: 38ch;
+	}
+
+	.banner-img {
+		order: 1;
+	}
+
+	.banner .cta {
+		margin-left: 13px;
+	}
+
+	/* services section */
+	.services {
+		/* position: relative; */
+	}
+	.services .flex {
+		align-items: flex-start;
+	}
+
+	.services-details {
+		margin-top: 0;
+		position: relative;
+	}
+
+	.services-bar {
+		position: unset;
+	}
+
+	.services-details-number {
+		position: absolute;
+		left: -82px;
+	}
+
+	.services-info {
+		text-align: left;
+	}
+
+	.services-info-title {
+		margin-left: 0;
+	}
+
+	.services-info-text {
+		max-width: 35ch;
+		margin-left: 0;
+	}
+
+	/* cta section */
+	.cta-title {
+		max-width: 20ch;
+		margin: 0;
+		text-align: left;
+	}
 }
