@@ -153,120 +153,75 @@
 
 		<!-- testimonials section -->
 		<section class="testimonials">
-			<h2 class="testimonials-title title">What they’ve said</h2>
+			<div class="wrapPerson" id="wrapSlider">
+				<h2>What they’ve said</h2>
+				<div class="wrapSlider" id="sliderScroll">
+					<div class="wrapPersonSlider" id="slider">
+						<div
+							class="itemSlider itemSlider1"
+							id="itemSlider1"
+							onclick="selectSlider(1)"
+						>
+							<img src="images/avatar-anisha.png" alt="avatar anisha" />
+							<h3>Anisha Li</h3>
+							<p>
+								“Manage has supercharged our team’s workflow. The ability to
+								maintain visibility on larger milestones at all times keeps
+								everyone motivated.”
+							</p>
+						</div>
 
-			<section class="slider" aria-label="testimonial slider">
-				<p class="sr-only">
-					Image slider with four slides, shown one at a time. Use next and
-					previous for navigation
-				</p>
+						<div
+							class="itemSlider itemSlider2"
+							id="itemSlider2"
+							onclick="selectSlider(2)"
+						>
+							<img src="images/avatar-ali.png" alt="avatar ali" />
+							<h3>Ali Bravo</h3>
+							<p>
+								“We have been able to cancel so many other subscriptions since
+								using Manage. There is no more cross-channel confusion and
+								everyone is much more focused.”
+							</p>
+						</div>
 
-				<button class="previous">
-					<span><i class="fas fa-angle-left fa-2x"></i></span>
-					<span class="sr-only">Previous</span>
-				</button>
+						<div
+							class="itemSlider itemSlider3"
+							id="itemSlider3"
+							onclick="selectSlider(3)"
+						>
+							<img src="images/avatar-richard.png" alt="avatar richard" />
+							<h3>Richard Watts</h3>
+							<p>
+								“Manage allows us to provide structure and process. It keeps us
+								organized and focused. I can’t stop recommending them to
+								everyone I talk to!”
+							</p>
+						</div>
 
-				<div class="cards">
-					<!-- card 1 -->
-					<blockquote
-						class="card slide active"
-						role="group"
-						aria-label="slide 1 of 4"
-					>
-						<img
-							src="./images/avatar-anisha.png"
-							alt="Anisha"
-							class="card-img"
-						/>
-						<h4 class="card-name">Anisha Li</h4>
-						<p class="card-text">
-							“Manage has supercharged our team’s workflow. The ability to
-							maintain visibility on larger milestones at all times keeps
-							everyone motivated.”
-						</p>
-					</blockquote>
-
-					<!-- card 2 -->
-					<blockquote
-						class="card slide active"
-						role="group"
-						aria-label="slide 2 of 4"
-					>
-						<img src="./images/avatar-ali.png" alt="Ali" class="card-img" />
-						<h4 class="card-name">Ali Bravo</h4>
-						<p class="card-text">
-							“We have been able to cancel so many other subscriptions since
-							using Manage. There is no more cross-channel confusion and
-							everyone is much more focused.”
-						</p>
-					</blockquote>
-
-					<!-- card 3 -->
-					<blockquote
-						class="card slide active"
-						role="group"
-						aria-label="slide 3 of 4"
-					>
-						<img
-							src="./images/avatar-richard.png"
-							alt="Richard"
-							class="card-img"
-						/>
-						<h4 class="card-name">Richard Watts</h4>
-						<p class="card-text">
-							“Manage allows us to provide structure and process. It keeps us
-							organized and focused. I can’t stop recommending them to everyone
-							I talk to!”
-						</p>
-					</blockquote>
-
-					<!-- card 4 -->
-					<blockquote class="card slide" role="group" aria-label="slide 4 of 4">
-						<img
-							src="./images/avatar-shanai.png"
-							alt="Shanai"
-							class="card-img"
-						/>
-						<h4 class="card-name">Shanai Gough</h4>
-						<p class="card-text">
-							“Their software allows us to track, manage and collaborate on our
-							projects from anywhere. It keeps the whole team in-sync without
-							being intrusive.”
-						</p>
-					</blockquote>
+						<div
+							class="itemSlider itemSlider4"
+							id="itemSlider4"
+							onclick="selectSlider(4)"
+						>
+							<img src="images/avatar-shanai.png" alt="avatar shanai" />
+							<h3>Shanai Gough</h3>
+							<p>
+								“Their software allows us to track, manage and collaborate on
+								our projects from anywhere. It keeps the whole team in-sync
+								without being intrusive.”
+							</p>
+						</div>
+					</div>
 				</div>
-
-				<button class="next">
-					<span><i class="fas fa-angle-right fa-2x"></i></span>
-					<span class="sr-only">Next</span>
-				</button>
-
-				<ul class="slider-navigation">
-					<li class="">
-						<button class="slider-btn">
-							<span class="sr-only">Go to slide 1</span>
-						</button>
-					</li>
-					<li>
-						<button class="slider-btn">
-							<span class="sr-only">Go to slide 2</span>
-						</button>
-					</li>
-					<li>
-						<button class="slider-btn">
-							<span class="sr-only">Go to slide 3</span>
-						</button>
-					</li>
-					<li>
-						<button class="slider-btn">
-							<span class="sr-only">Go to slide 4</span>
-						</button>
-					</li>
-				</ul>
-			</section>
-			<!-- slider -->
-
-			<a href="/" class="btn cta btn-primary">Get Started</a>
+				<div class="btnSlider">
+					<div class="btn btnActive" id="btn1"></div>
+					<div class="btn" id="btn2"></div>
+					<div class="btn" id="btn3"></div>
+					<div class="btn" id="btn4"></div>
+				</div>
+				<a href="#">Get Started</a>
+			</div>
 		</section>
 
 		<!-- call to action section -->

@@ -13,38 +13,84 @@ hamburger.addEventListener('click', () => {
 
 // slider functionality
 
-let slides = document.querySelectorAll('.slide');
-let nextSlide = document.querySelector('.next');
-let previousSlide = document.querySelector('.previous');
-let totalSlides = slides.length;
-let index = 0;
+/* Slider*/
+const slider = document.getElementById('slider');
 
-// when right arrow is clicked, run function next
-nextSlide.addEventListener('click', () => {
-	slideTo('nextSlide');
-});
-
-previousSlide.addEventListener('click', () => {
-	slideTo('previousSlide');
-});
-
-// determine which slide will be displayed next
-function slideTo(direction) {
-	if (direction == 'nextSlide') {
-		index++;
-		if (index == totalSlides) {
-			index = 0;
-		}
+let num = 1;
+let prevBtn = 'btn1';
+/* Function next */
+function next() {
+	/* La paginacion */
+	if (num < 4) {
+		num += 1;
 	} else {
-		if (index == 0) {
-			index = totalSlides - 1;
-		} else {
-			index--;
+		num = 1;
+	}
+	let itemSliderMid = document.querySelectorAll('.itemSlider')[1];
+
+	if (itemSliderMid.classList.contains(`itemSlider${num}`)) {
+		if (prevBtn) {
+			let prev = document.getElementById(prevBtn);
+			prev.classList.remove('btnActive');
 		}
+		prevBtn = `btn${num}`;
+		let btn = document.getElementById(`btn${num}`);
+		btn.classList.add('btnActive');
 	}
 
-	for (i = 0; i < slides.length; i++) {
-		slides[i].classList.remove('active');
+	/* Ancho de Pantalla */
+	let anchoWindow = window.innerWidth;
+	if (anchoWindow < 912) {
+		let itemSliderFirst = document.querySelectorAll('.itemSlider')[0];
+		slider.style.marginLeft = '-100%';
+		slider.style.transition = '.8s';
+		setTimeout(() => {
+			slider.style.transition = 'none';
+			slider.insertAdjacentElement('beforeend', itemSliderFirst);
+			slider.style.marginLeft = '0';
+		}, 800);
+	} else {
+		let itemSliderFirst = document.querySelectorAll('.itemSlider')[0];
+		slider.style.marginLeft = '-35%';
+		slider.style.transition = '.8s';
+		setTimeout(() => {
+			slider.style.transition = 'none';
+			slider.insertAdjacentElement('beforeend', itemSliderFirst);
+			slider.style.marginLeft = '0';
+		}, 800);
 	}
-	slides[index].classList.add('active');
+}
+
+/* Slider automatico */
+let automatico;
+automatico = setInterval(next, 7000);
+
+let onOff = false;
+function onOffInterval() {
+	if (!onOff) {
+		onOff = true;
+		clearInterval(automatico);
+	} else {
+		onOff = false;
+		automatico = setInterval(next, 7000);
+	}
+}
+
+/* Seleccionar un item del slider */
+let selectPrev = null;
+function selectSlider(val) {
+	let selectSlider = document.getElementById(`itemSlider${val}`);
+	if (selectPrev) {
+		let prev = document.getElementById(selectPrev);
+		prev.classList.remove('selectActive');
+		selectPrev = null;
+	}
+	selectPrev = `itemSlider${val}`;
+	selectSlider.classList.add('selectActive');
+	onOffInterval();
+	setTimeout(() => {
+		selectSlider.classList.remove('selectActive');
+		/* Reaunadar el setInteral */
+		onOffInterval();
+	}, 5000);
 }

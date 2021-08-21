@@ -325,106 +325,118 @@ header.overlay {
 	align-items: center;
 }
 
-.testimonials-title {
+.wrapPerson {
 	text-align: center;
-	font-size: 2rem;
+	margin: 45px 0;
+	padding: 30px 0;
 }
 
-.slider {
-	width: 23rem;
+.wrapPerson h2 {
+	color: #242d52;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.wrapPerson .wrapSlider {
+	padding: 65px 0 0;
+	overflow-x: hidden;
+	margin-bottom: 70px;
+}
+
+.wrapPerson .wrapSlider .wrapPersonSlider {
+	margin-top: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 400%;
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-left: 0;
+}
+
+.wrapPerson .wrapSlider .wrapPersonSlider .itemSlider {
+	margin: 0 15px;
+	background-color: #fafafa;
 	position: relative;
-	overflow: hidden;
-}
-
-.previous,
-.next {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	position: absolute;
-	top: 50%;
-
-	border: none;
-	background: none;
-	color: var(--P-Bright-Red);
-}
-
-.previous:hover,
-.next:hover {
+	padding: 80px 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	cursor: pointer;
-	opacity: 0.8;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	border: 2px solid transparent;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
 }
 
-.previous {
-	left: 20px;
-	z-index: 2;
+.wrapPerson .wrapSlider .wrapPersonSlider .itemSlider img {
+	width: 80px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+	top: -40px;
 }
 
-.next {
-	right: 20px;
+.wrapPerson .wrapSlider .wrapPersonSlider .itemSlider h3 {
+	color: #242d52;
 }
 
-.slider-navigation {
+.wrapPerson .wrapSlider .wrapPersonSlider .itemSlider p {
+	margin-top: 15px;
+	color: #888;
+}
+
+.wrapPerson .wrapSlider .wrapPersonSlider .selectActive {
+	background-color: #ebe9e9;
+	border: 2px solid #dcdcdc;
+}
+
+.wrapPerson .btnSlider {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	list-style: none;
-}
-
-.slider-btn {
-	border: 2px solid var(--P-Bright-Red);
-	width: 0.2em;
-	height: 0.2em;
-	padding: 0.2em;
-	border-radius: 50%;
-	margin: 0.5rem;
-	background-color: var(--N-white);
-}
-
-.slider-btn[aria-current='true'] {
-	background-color: var(--P-Bright-Red);
-	width: 0.3em;
-	height: 0.3em;
-}
-
-/* testimonials card */
-
-.cards {
-	display: flex;
-	transform: translateX(-23px);
-}
-
-.card {
-	display: none;
-}
-
-.card.active {
-	display: block;
-
-	background: var(--N-Vary-Light-Gray);
-	padding: 1.4em;
 	text-align: center;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	gap: 1.5em;
-	margin-top: 4em;
-
-	min-width: 21em;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	margin: auto;
+	margin-bottom: 30px;
 }
 
-.card-img {
-	width: 65px;
-	margin-top: -3.5em;
+.wrapPerson .btnSlider .btn {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #f25f3a;
+	cursor: pointer;
+	margin: 0 2px;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
-.card-text {
-	font-size: 0.75rem;
-	max-width: 35ch;
+.wrapPerson .btnSlider .btnActive {
+	background-color: #f25f3a;
 }
 
+.wrapPerson a {
+	color: #fff;
+	text-decoration: none;
+	background-color: #f25f3a;
+	padding: 10px 20px;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 8px 14px -8px #f25f3a;
+	box-shadow: 0px 8px 14px -8px #f25f3a;
+	margin-bottom: 20px;
+}
+
+.wrapPerson a:hover {
+	background-color: #f08e76;
+}
+/* 
 /* cta section */
 .cta-section {
 	background-color: var(--P-Bright-Red);
@@ -861,23 +873,27 @@ header.overlay {
 	}
 
 	/* testimonials section */
-	.slider {
-		width: 100%;
-		overflow: hidden;
+	.wrapPerson {
+		margin: 80px 0 120px;
 	}
-
-	/* cta section */
-	.cta-section {
-		padding: 1rem 6rem;
+	.wrapPerson .wrapSlider .wrapPersonSlider {
+		margin-top: 100px;
+		width: 140%;
+		margin-left: 0;
+		margin-bottom: 70px;
 	}
-
-	.cta-title {
-		max-width: 20ch;
-		margin: 0;
-		text-align: left;
+	.wrapPerson .wrapSlider .wrapPersonSlider .itemSlider {
+		margin: 0 15px;
+		padding: 80px 20px;
 	}
-
-	.btn-secondary {
-		margin-top: 6rem;
+	.wrapPerson .wrapSlider .wrapPersonSlider .itemSlider img {
+		width: 80px;
+		top: -40px;
+	}
+	.wrapPerson .wrapSlider .wrapPersonSlider .itemSlider p {
+		margin-top: 15px;
+	}
+	.wrapPerson .btnSlider {
+		display: none;
 	}
 }
