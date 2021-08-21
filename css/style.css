@@ -124,7 +124,7 @@ section {
 	background: url(../images/bg-tablet-pattern.svg) no-repeat;
 	background-position: top -116px right -149px;
 
-	margin-top: 2.875em;
+	padding-top: 2.875em;
 }
 
 .logo {
@@ -556,6 +556,16 @@ header.overlay {
 .footer-copyright {
 	margin-top: 3rem;
 	font-size: 0.8125rem;
+}
+
+/* attribution */
+
+.attribution {
+	text-align: center;
+}
+
+.attribution a {
+	color: var(--P-Bright-Red);
 }
 
 /* Media query for tablets */
